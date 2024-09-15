@@ -409,3 +409,8 @@ header h1 {
   background-color: #23d0e7;
   color: white;
 }
+
+.correct {
+  background-color: rgb(25, 179, 25) !important;
+  color: white !important;
+}

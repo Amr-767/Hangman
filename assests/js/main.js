@@ -72,6 +72,9 @@ function letterClicked() {
           i
         ].innerHTML = e.toUpperCase();
         numberOfCorrects++;
+        Array.from(document.querySelectorAll(".guess .guess-letter"))[
+          i
+        ].classList.add("correct");
       }
     });
     if (numberOfCorrects === wordArr.length) {
