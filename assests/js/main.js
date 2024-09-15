@@ -131,6 +131,3 @@ document.getElementById("Smusic").addEventListener("click", () => {
   document.getElementById("Pmusic").style.display = "block";
   document.getElementById("Smusic").style.display = "none";
 });
-
-let testword = "amr";
-console.log(testword[0].toUpperCase() + testword.slice(1));
