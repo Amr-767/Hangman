@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assests/images/hangman-game.png"
+    />
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assests/css/all.min.css" />
+    <link rel="stylesheet" href="./assests/css/normalize.css" />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="message">
+        <div class="message-content">
+          <h1>You won! 🎉✨</h1>
+          <button class="btn btn-success" id="reload">Play again ?</button>
+        </div>
+      </div>
+      <header>
+        <a href="index.html"><h1>Hangman</h1></a>
+        <div class="category">
+          <p>Word From : <span id="category">Unknown</span></p>
+          <div class="mistakes">
+            Mistakes :<span id="number-of-mistakes">0</span>
+          </div>
+          <button class="btn btn-outline-primary" id="Pmusic">
+            Play music
+          </button>
+          <button class="btn btn-outline-primary" id="Smusic">
+            Stop music
+          </button>
+        </div>
+      </header>
+      <div class="game-content">
+        <div class="hangman-draw">
+          <div class="stand"></div>
+          <div class="robe"></div>
+          <div class="head"></div>
+          <div class="body"></div>
+          <div class="hands"></div>
+          <div class="legs"></div>
+        </div>
+        <div class="keys"></div>
+      </div>
+      <hr />
+      <div class="guess"></div>
+    </div>
+    <audio src="assests/audio/correct-choice-43861.mp3" id="correct"></audio>
+    <audio src="assests/audio/wronganswer-37702.mp3" id="wrong"></audio>
+    <audio src="assests/audio/violin-win-5-185128.mp3" id="win"></audio>
+    <audio
+      src="assests/audio/mixkit-funny-fail-low-tone-2876.wav"
+      id="lost"
+    ></audio>
+    <audio src="assests/audio/mixkit-romantic-659.mp3" id="loop" loop></audio>
+    <script src="assests/js/bootstrap.bundle.min.js"></script>
+    <script src="assests/js/main.js"></script>
+  </body>
+</html>
